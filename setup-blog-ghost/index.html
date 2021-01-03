@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>How To Setup Your Blogging Site For Rs.355/Month</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css?v=8f5235c60c">
+
+    <meta name="description" content="Have you decided to start blogging but confused about how to setup a blog? Just read this blog where I have listed all the things you need to do for getting your blog up and running using ghost, digital ocean and let us encrypt.">
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="amp/index.html">
+    
+    <meta property="og:site_name" content="Tech Inertia ">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How To Setup Your Blogging Site For Rs.355/Month">
+    <meta property="og:description" content="Have you decided to start blogging but confused about how to setup a blog? Just read this blog where I have listed all the things you need to do for getting your blog up and running using ghost, digital ocean and lets encrypt.">
+    <meta property="og:url" content="https://techinertia.com/setup-blog-ghost/">
+    <meta property="og:image" content="//res-3.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/red-hands-woman-creative_o.jpg">
+    <meta property="article:published_time" content="2019-03-18T00:52:00.000Z">
+    <meta property="article:modified_time" content="2019-04-27T17:08:12.000Z">
+    <meta property="article:tag" content="ghost">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/techinertiahq">
+    <meta property="article:author" content="https://www.facebook.com/bhosalenilesh">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How To Setup Your Blogging Site For Rs.355/Month">
+    <meta name="twitter:description" content="Have you decided to start blogging but confused about how to setup a blog? Just read this blog where I have listed all the things you need to do for getting your blog up and running using ghost, digital ocean and lets encrypt.">
+    <meta name="twitter:url" content="https://techinertia.com/setup-blog-ghost/">
+    <meta name="twitter:image" content="//res-3.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/red-hands-woman-creative_o.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Nilesh Bhosale">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="ghost">
+    <meta name="twitter:site" content="@techinertiahq">
+    <meta name="twitter:creator" content="@nileshbhosale91">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1280">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Tech Inertia ",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "//res-5.cloudinary.com/techinertia-com/image/upload/q_auto/v1/blog-images/Tech-Inertia-logo-C2.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Nilesh Bhosale",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//res-2.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/23593408_10213587001607390_6938354664891659638_o.jpg",
+            "width": 1080,
+            "height": 1080
+        },
+        "url": "https://techinertia.com/author/nilesh/",
+        "sameAs": [
+            "//nileshbhosale.com",
+            "https://www.facebook.com/bhosalenilesh",
+            "https://twitter.com/nileshbhosale91"
+        ]
+    },
+    "headline": "How To Setup Your Blogging Site For Rs.355/Month",
+    "url": "https://techinertia.com/setup-blog-ghost/",
+    "datePublished": "2019-03-18T00:52:00.000Z",
+    "dateModified": "2019-04-27T17:08:12.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "//res-3.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/red-hands-woman-creative_o.jpg",
+        "width": 1920,
+        "height": 1280
+    },
+    "keywords": "ghost",
+    "description": "Have you decided to start blogging but confused about how to setup a blog? Just read this blog where I have listed all the things you need to do for getting your blog up and running using ghost, digital ocean and lets encrypt.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://techinertia.com/"
+    }
+}
+    </script>
+
+    <script defer src="../public/members.js?v=8f5235c60c"></script>
+    <meta name="generator" content="Ghost 3.8">
+    <link rel="alternate" type="application/rss+xml" title="Tech Inertia " href="../rss/index.rss">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5278548880863315",
+    enable_page_level_ads: true
+  });
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120240988-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120240988-1');
+</script>
+<style>
+.site-logo {
+    max-height: 200px !important;
+}
+</style>
+
+<!--<script type="text/javascript">
+  var subscribersSiteId = '99c326b1-ccdb-48f6-abc5-4534510b5555';
+</script>-->
+<script type="text/javascript" src="https://cdn.subscribers.com/assets/subscribers.js"></script>
+
+<script data-ad-client="ca-pub-5278548880863315" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+</head>
+<body class="post-template tag-ghost-tag">
+
+    <div class="site-wrapper">
+
+        
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+                <a class="site-nav-logo" href="../index.html"><img src="//res-5.cloudinary.com/techinertia-com/image/upload/q_auto/v1/blog-images/Tech-Inertia-logo-C2.png" alt="Tech Inertia "></a>
+            <ul class="nav" role="menu">
+    <li class="nav-home" role="menuitem"><a href="../index.html">Home</a></li>
+    <li class="nav-about" role="menuitem"><a href="../about/index.html">About</a></li>
+    <li class="nav-feedback" role="menuitem"><a href="../feedback/index.html">Feedback</a></li>
+</ul>
+
+    </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+                <a class="social-link social-link-fb" href="https://www.facebook.com/techinertiahq" title="Facebook" target="_blank" rel="noopener"><svg xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
+</a>
+                <a class="social-link social-link-tw" href="https://twitter.com/techinertiahq" title="Twitter" target="_blank" rel="noopener"><svg xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
+</a>
+        </div>
+            <a class="rss-button" href="https://feedly.com/i/subscription/feed/https://techinertia.com/rss/" title="RSS" target="_blank" rel="noopener"><svg xmlns="//www.w3.org/2000/svg" viewbox="0 0 24 24"><circle cx="6.18" cy="17.82" r="2.18"></circle><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"></path></svg>
+</a>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post tag-ghost-tag featured ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="2019-03-18">18 March 2019</time>
+                        <span class="date-divider">/</span> <a href="../tag/ghost-tag/index.html">ghost</a>
+                </section>
+                <h1 class="post-full-title">How To Setup Your Blogging Site For Rs.355/Month</h1>
+            </header>
+
+            <figure class="post-full-image" style="background-image: url(//res-3.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/red-hands-woman-creative_o.jpg)">
+            </figure>
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    <p>Have you decided to start blogging but confused about how to setup a blog? Just read this blog where I have listed all the things you need to do for getting your blog up and running using ghost, digital ocean and lets encrypt.</p><h2 id="medium-vs-wordpress-vs-ghost">Medium VS WordPress VS Ghost?</h2><p>You can setup a blog using a number of ways, a few popular once listed here:</p><!--kg-card-begin: html--><style>
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:600,700';
+
+* {font-family: 'Open Sans', sans-serif;}
+
+.rwd-table {
+  margin: auto;
+  min-width: 300px;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+.rwd-table tr:first-child {
+  border-top: none;
+  background: #428bca;
+  color: #fff;
+}
+
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f9fc;
+}
+
+.rwd-table tr:nth-child(odd):not(:first-child) {
+  background-color: #ebf3f9;
+}
+
+.rwd-table th {
+  display: none;
+}
+
+.rwd-table td {
+  display: block;
+  background-image : none !important;
+}
+
+.rwd-table td:first-child {
+  margin-top: .5em;
+}
+
+.rwd-table td:last-child {
+  margin-bottom: .5em;
+}
+
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 120px;
+  display: inline-block;
+  color: #000;
+}
+
+.rwd-table th,
+.rwd-table td {
+  text-align: left;
+}
+
+.rwd-table {
+  color: #333;
+  border-radius: .4em;
+  overflow: hidden;
+  display: table !important;
+}
+
+.rwd-table tr {
+  border-color: #bfbfbf;
+}
+
+.rwd-table th,
+.rwd-table td {
+  padding: .5em 1em;
+}
+@media screen and (max-width: 601px) {
+  .rwd-table tr:nth-child(2) {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .rwd-table tr:hover:not(:first-child) {
+    background-color: #d8e7f3;
+  }
+  .rwd-table td:before {
+    display: none;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child,
+  .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child,
+  .rwd-table td:last-child {
+    padding-right: 0;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    padding: 1em !important;
+  }
+}
+
+
+/* THE END OF THE IMPORTANT STUFF */
+
+/* Basic Styling */
+body {
+background: #4B79A1;
+background: -webkit-linear-gradient(to left, #4B79A1 , #283E51);
+background: linear-gradient(to left, #4B79A1 , #283E51);        
+}
+h1 {
+  text-align: center;
+  font-size: 2.4em;
+  color: #f2f2f2;
+}
+.container {
+  display: block;
+  text-align: center;
+}
+h3 {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  color: #cecece;
+}
+h3:before {
+  content: "\25C0";
+  position: absolute;
+  left: -50px;
+  -webkit-animation: leftRight 2s linear infinite;
+  animation: leftRight 2s linear infinite;
+}
+h3:after {
+  content: "\25b6";
+  position: absolute;
+  right: -50px;
+  -webkit-animation: leftRight 2s linear infinite reverse;
+  animation: leftRight 2s linear infinite reverse;
+}
+@-webkit-keyframes leftRight {
+  0%    { -webkit-transform: translateX(0)}
+  25%   { -webkit-transform: translateX(-10px)}
+  75%   { -webkit-transform: translateX(10px)}
+  100%  { -webkit-transform: translateX(0)}
+}
+@keyframes leftRight {
+  0%    { transform: translateX(0)}
+  25%   { transform: translateX(-10px)}
+  75%   { transform: translateX(10px)}
+  100%  { transform: translateX(0)}
+}
+
+</style>
+<div class="container">
+  <table class="rwd-table">
+    <tbody>
+      <tr>
+        <th></th>
+        <th>Medium</th>
+        <th>Word Press</th>
+        <th>Ghost</th>
+        <th>Ghost Self Hosted</th>
+      </tr>
+      <tr>
+        <td data-th="Property">
+          Costing
+        </td>
+        <td data-th="Medium">
+          Free
+        </td>
+        <td data-th="Word Press">
+          ₹255 /month,
+billed annually
+        </td>
+        <td data-th="Ghost">
+          ₹255 /month,
+billed annually
+        </td>
+        <td data-th="Ghost+SH">
+          ₹355 /month
+        </td>
+   
+      </tr>
+      <tr>
+        <td data-th="Property">
+          Features
+        </td>
+        <td data-th="Medium">
+          Custom platform 
+for blogging
+        </td>
+        <td data-th="Word Press">
+          Simple
+        </td>
+        <td data-th="Ghost">
+          Simplest
+        </td>
+        <td data-th="Ghost+SH">
+          Simplest and 
+you own everything.
+        </td>
+
+      </tr>
+      <tr>
+        <td data-th="Property">
+          Downside
+        </td>
+        <td data-th="Medium">
+          Limited 
+customizations
+        </td>
+        <td data-th="Word Press">
+          Can get a bit 
+complicated
+        </td>
+        <td data-th="Ghost">
+         A bit costly.
+        </td>
+        <td data-th="Ghost+SH">
+          Need to setup
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div><!--kg-card-end: html--><p>Using ghost on a self-hosted virtual machine provides you total control over everything related to your blog.</p><p>I loved the ghost user interface and ease of editing it provides along with flexibility in options to customize anything later. </p><h2 id="self-hosted-vs-managed-hosting">Self Hosted VS Managed Hosting</h2><p>Wordpress and ghost both offer managed hosting by hosting your blog on shared hosting. This quickly helps in getting setup with your blog. </p><p>Although if you are really serious about blogging and wish to control all aspects you can choose to host your blog on a custom vm using digital ocean or any other provider. </p><h2 id="which-hosting-to-use">Which Hosting To Use</h2><p>To start its usually best to go with a basic vm and then scale the server once you get more traffic. </p><!--kg-card-begin: html--><div class="container">
+  <table class="rwd-table">
+    <tbody>
+      <tr>
+        <th></th>
+        <th>AWS</th>
+        <th>Azure</th>
+        <th>Google Cloud</th>
+        <th>Digital Ocean</th>
+      </tr>
+        <tr>
+        <td data-th="Property">
+          Hardware
+        </td>
+        <td data-th="AWS">
+          t2.micro
+        </td>
+        <td data-th="Azure">
+          A0
+        </td>
+        <td data-th="Google Cloud">
+          f1-micro
+        </td>
+        <td data-th="Digital Ocean">
+          standard
+        </td>
+      </tr>
+      <tr>    
+        <td data-th="Property">
+          Ram Memory
+        </td>
+        <td data-th="AWS">
+          1 GB
+        </td>
+        <td data-th="Azure">
+          0.75 GB
+        </td>
+        <td data-th="Google Cloud">
+          0.6 GB
+        </td>
+        <td data-th="Digital Ocean">
+          1 GB
+        </td>
+      </tr>
+      <tr>    
+        <td data-th="Property">
+          Costing Per Month
+        </td>
+        <td data-th="AWS">
+          8$
+        </td>
+        <td data-th="Azure">
+          14.65$
+        </td>
+        <td data-th="Google Cloud">
+          4.65$
+        </td>
+        <td data-th="Digital Ocean">
+          5$
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div><!--kg-card-end: html--><p>Digital ocean provides easy to use ui to create and manage new vms. </p><h2 id="how-to-create-your-ssh-key">How To Create Your SSH Key</h2><p>SSH Keys are used to login to virtual machines on the cloud. You will need this key to setup your digital ocean account in next steps.</p><pre><code># Creating your ssh key
+ssh-keygen</code></pre><figure class="kg-card kg-image-card"><img src="//res-4.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/Screenshot-2019-03-16-at-5.18.31-PM-min.png" class="kg-image"></figure><p>Just visit <a href="https://cloud.digitalocean.com/account/security">https://cloud.digitalocean.com/account/security</a>.</p><p>You will need to copy the content of the file id_rsa.pub and paste it while adding your key on digital ocean.</p><figure class="kg-card kg-image-card"><img src="//res-1.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/Screenshot-2019-03-16-at-5.42.10-PM.png" class="kg-image"></figure><h2 id="how-to-create-a-droplet-in-digital-ocean">How to create a droplet in Digital Ocean?</h2><ul><li>Go to create a new droplet, once you sign up on digital ocean. </li></ul><figure class="kg-card kg-image-card kg-width-wide"><img src="//res-5.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/New-Droplet-Select.png" class="kg-image"></figure><ul><li>Select the type of droplet. For starting new we can begin with:</li></ul><!--kg-card-begin: markdown--><ol>
+<li>18.04.2X64 Ubuntu.</li>
+<li>Standard Plan.</li>
+<li>1 Gb, 25 Gb SSD Disk and 1000 Gb Transfer</li>
+</ol>
+<!--kg-card-end: markdown--><figure class="kg-card kg-image-card kg-width-wide"><img src="//res-1.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/Select-1-1.png" class="kg-image"></figure><ul><li>Select your closest datacenter for the vm. Closer the server is your target audience faster will the website load. </li><li>Add your ssh key for accessing the droplet. </li></ul><figure class="kg-card kg-image-card kg-width-wide"><img src="//res-1.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/Select-3.png" class="kg-image"></figure><ul><li>Finally, choose a name for the droplet and click create</li></ul><figure class="kg-card kg-image-card kg-width-wide"><img src="//res-1.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/Select-Last.png" class="kg-image"></figure><p>It will take a few seconds to create the droplet for you and it should be up and running. </p><figure class="kg-card kg-image-card kg-width-wide"><img src="//res-3.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/Creating-droplet.png" class="kg-image"></figure><p>You can view all the information about this droplet. Just copy the ipv4 address for pointing your domain to this droplet.</p><figure class="kg-card kg-image-card kg-width-wide"><img src="//res-3.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/droplet-created-1.png" class="kg-image"></figure><h2 id="linking-your-domain-to-droplet">Linking Your Domain To Droplet</h2><p>Go to the dns management section on your dns provider website and add a <code>A record</code> pointing to the 	</p><figure class="kg-card kg-image-card kg-width-wide"><img src="//res-5.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/dns-record-1.png" class="kg-image"></figure><p></p><h2 id="setting-up-our-droplet-with-ghost-on-docker-and-https-with-certbot">Setting Up Our Droplet With Ghost On Docker and Https with certbot</h2><ul><li>Login to the droplet using ipv4 address and user as root.</li></ul><pre><code>ssh root@159.89.161.23</code></pre><ul><li>Create a new user and allow sudo access to this user</li></ul><pre><code>adduser nilesh
+usermod -aG sudo nilesh</code></pre><ul><li>Copy your ssh key to the newly created user from your machine</li></ul><pre><code>cat ~/.ssh/id_rsa.pub | ssh root@newblog.techinertia.com "mkdir -p /home/nilesh/.ssh &amp;&amp; cat &gt;&gt; /home/nilesh/.ssh/authorized_keys"</code></pre><ul><li>Login using the new user</li></ul><pre><code>ssh nilesh@159.89.161.23</code></pre><ul><li>Install ufw, nginx, docker, software properties and certbot</li></ul><pre><code># Setup firewall
+sudo apt install ufw
+ufw default deny incoming
+ufw default allow outgoing
+ufw allow ssh
+ufw allow 80/tcp
+ufw allow 443/tcp
+ufw enable
+
+# Install Docker
+curl -sL https://get.docker.com | sh
+sudo usermod -aG docker nilesh
+
+# Install Nginx
+sudo apt install nginx
+
+# Install software properties and certbot
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt update
+sudo apt-get install python-certbot-nginx
+</code></pre><ul><li>Update nginx configurations to run certbot https verifications. Update the file /etc/nginx/sites-available/default</li></ul><pre><code>server {
+	listen 80;
+	server_name newblog.techinertia.com;
+	location /.well-known/ {
+		root /var/www/newblog.techinertia.com/;
+	}
+
+	location / {
+		return 301 https://$server_name$request_uri;
+	}
+}</code></pre><ul><li>Create a folder for new blog files</li></ul><pre><code>mkdir /var/www/newblog.techinertia.com</code></pre><ul><li>Run the following commands to run certbot verification</li></ul><pre><code>sudo certbot --authenticator webroot --installer nginx</code></pre><figure class="kg-card kg-image-card kg-width-wide"><img src="//res-4.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/setting-up-certbot-min-1.png" class="kg-image"></figure><ul><li>Enter the folder path when prompted for webroot. </li><li>Select redirect all traffic page to HTTPS.</li></ul><figure class="kg-card kg-image-card kg-width-wide"><img src="//res-1.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/certbot-2-min.png" class="kg-image"></figure><ul><li>Now update your nginx config file to below settings</li></ul><pre><code>server {
+	server_name newblog.techinertia.com;
+	listen 443 ssl;
+
+	location / {
+		proxy_pass	//127.0.0.1:2368;
+	        proxy_set_header    X-Real-IP $remote_addr;
+	        proxy_set_header    Host      $http_host;
+		proxy_set_header X-Forwarded-Proto https;
+	        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+	}
+
+	ssl_certificate     /etc/letsencrypt/live/newblog.techinertia.com/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/newblog.techinertia.com/privkey.pem;
+	ssl on;
+
+}</code></pre><ul><li>Install docker image for ghost</li></ul><pre><code>docker run --name ghost \
+ -p 127.0.0.1:2368:2368 \
+ -e url=https://newblog.techinertia.com \
+ -v /home/nilesh/ghost/content:/var/lib/ghost/content \
+ --restart=always \</code></pre><ul><li>Check newblog.techinertia.com and you should be up and running.</li></ul><figure class="kg-card kg-image-card"><img src="//res-3.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/up-and-running-min-min.jpg" class="kg-image"></figure><ul><li>Just visit newblog.techinertia.com/ghost and complete the setup by creating your user. </li></ul><figure class="kg-card kg-image-card kg-width-full"><img src="//res-2.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/merge_from_ofoct.jpg" class="kg-image"></figure><h2 id="conclusion">Conclusion</h2><p>Self-hosted ghost blog using digital ocean provide a simple way to maintain your blog while owning everything on your platform.</p><p>If you are willing to create a brand for your blog, monetize the incoming traffic and create a strong reputation for your domain you should use the combination described above to setup your blog. </p>
+                </div>
+            </section>
+
+
+            <footer class="post-full-footer">
+
+
+                    
+<section class="author-card">
+        <img class="author-profile-image" src="//res-2.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/23593408_10213587001607390_6938354664891659638_o.jpg" alt="Nilesh Bhosale">
+    <section class="author-card-content">
+        <h4 class="author-card-name"><a href="../author/nilesh/index.html">Nilesh Bhosale</a></h4>
+            <p>I have worked with startups having a goal of building MVP's. I love working on product's that solve real life problems. I believe if nothing seems right, you can code your way out of it.</p>
+    </section>
+</section>
+<div class="post-full-footer-right">
+    <a class="author-card-button" href="../author/nilesh/index.html">Read More</a>
+</div>
+
+
+            </footer>
+
+		<div id="disqus_thread"></div>
+    	<script>
+    	var disqus_config = function () {
+    	this.page.url = "https://techinertia.com/setup-blog-ghost/";  
+    	this.page.identifier = "ghost-5c6fc08fcc021c1cf271f192"
+    	};
+    	(function() {
+    	var d = document, s = d.createElement('script');
+    	s.src = 'https://techinertia-com.disqus.com/embed.js';
+    	s.setAttribute('data-timestamp', +new Date());
+    	(d.head || d.body).appendChild(s);
+    	})();
+    	</script>
+	
+        </article>
+
+    </div>
+</main>
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+
+                <article class="post-card post">
+        <a class="post-card-image-link" href="../starting-new-project/index.html">
+            <div class="post-card-image" style="background-image: url(//res-5.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/cellphone-desk-iphone-7100_o.jpg)"></div>
+        </a>
+    <div class="post-card-content">
+        <a class="post-card-content-link" href="../starting-new-project/index.html">
+            <header class="post-card-header">
+                <h2 class="post-card-title">The One Thing You Should Do Before Starting Any New Project</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>Following simple steps mentioned in this article you can take command of your code structure to help your customers or client get results faster while also making your life simpler.</p>
+            </section>
+        </a>
+        <footer class="post-card-meta">
+
+            <ul class="author-list">
+                <li class="author-list-item">
+
+                    <div class="author-name-tooltip">
+                        Nilesh Bhosale
+                    </div>
+
+                        <a href="../author/nilesh/index.html" class="static-avatar"><img class="author-profile-image" src="//res-2.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/23593408_10213587001607390_6938354664891659638_o.jpg" alt="Nilesh Bhosale"></a>
+                </li>
+            </ul>
+
+            <span class="reading-time">3 min read</span>
+
+        </footer>
+    </div>
+</article>
+
+                <article class="post-card post tag-startup">
+        <a class="post-card-image-link" href="../joining-a-startup/index.html">
+            <div class="post-card-image" style="background-image: url(//res-4.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/pexels-photo-1204649.jpg)"></div>
+        </a>
+    <div class="post-card-content">
+        <a class="post-card-content-link" href="../joining-a-startup/index.html">
+            <header class="post-card-header">
+                    <span class="post-card-tags">startup</span>
+                <h2 class="post-card-title">Is It Worth Joining A Startup (Even Though Investments Are Fewer Now)</h2>
+            </header>
+            <section class="post-card-excerpt">
+                <p>Should you consider finding a job in a startup knowing the fundings have reduced in last few years?</p>
+            </section>
+        </a>
+        <footer class="post-card-meta">
+
+            <ul class="author-list">
+                <li class="author-list-item">
+
+                    <div class="author-name-tooltip">
+                        Nilesh Bhosale
+                    </div>
+
+                        <a href="../author/nilesh/index.html" class="static-avatar"><img class="author-profile-image" src="//res-2.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/04/23593408_10213587001607390_6938354664891659638_o.jpg" alt="Nilesh Bhosale"></a>
+                </li>
+            </ul>
+
+            <span class="reading-time">3 min read</span>
+
+        </footer>
+    </div>
+</article>
+
+        </div>
+    </div>
+</aside>
+
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="../index.html">
+                <img src="//res-3.cloudinary.com/techinertia-com/image/upload/q_auto/v1/techinertia/2019/06/onlylogo.png" alt="Tech Inertia  icon">
+            <span>Tech Inertia </span>
+        </a>
+    </div>
+    <span class="floating-header-divider">—</span>
+    <div class="floating-header-title">How To Setup Your Blogging Site For Rs.355/Month</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="//www.w3.org/2000/svg" viewbox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"></path>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=How%20To%20Setup%20Your%20Blogging%20Site%20For%20Rs.355%2FMonth&amp;url=https://techinertia.com/setup-blog-ghost/" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"></path></svg>
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://techinertia.com/setup-blog-ghost/" onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path></svg>
+        </a>
+    </div>
+    <progress id="reading-progress" class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="../index.html">Tech Inertia </a> © 2021</section>
+                <nav class="site-footer-nav">
+                    <a href="../index.html">Latest Posts</a>
+                    <a href="https://www.facebook.com/techinertiahq" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://twitter.com/techinertiahq" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script>
+        var images = document.querySelectorAll('.kg-gallery-image img');
+        images.forEach(function (image) {
+            var container = image.closest('.kg-gallery-image');
+            var width = image.attributes.width.value;
+            var height = image.attributes.height.value;
+            var ratio = width / height;
+            container.style.flex = ratio + ' 1 0%';
+        })
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="../assets/built/jquery.fitvids.js?v=8f5235c60c"></script>
+
+
+    <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('#reading-progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+
+});
+</script>
+
+
+    
+
+</body>
+</html>
